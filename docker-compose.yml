@@ -1,0 +1,20 @@
+# Práctica de reverse proxy: nginx en el puerto 80 reparte las peticiones entre los servicios.
+#
+#   docker compose up -d                       ← siempre desde esta carpeta
+#     http://localhost/              → portal (proxy/web/)
+#     http://localhost/code/         → code-server
+#     http://localhost/portainer/    → Portainer
+#
+# Solo el proxy publica un puerto ("ports"). El resto de servicios no son accesibles desde fuera:
+# se llega a ellos a través del proxy, que los encuentra por su nombre de servicio (code, portainer…).
+
+services:
+  proxy:                        # reverse proxy + portal
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"                 # ¿Puerto 80 ocupado en tu PC? Usa otro: "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro   # la configuración
+      - ./web:/usr/share/nginx/html/web:ro                   # la web del portal
+      - ./intranet:/usr/share/nginx/html/intranet:ro                   # la web del portal
