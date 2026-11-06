@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontaktua | Gure Enpresa</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <a class="logo" href="index.html">Gure Enpresa</a>
+
+    <nav class="menu">
+      <a class="menu__enlace" href="index.html">Sarrera</a>
+      <a class="menu__enlace" href="quienes-somos.html">Nor gara</a>
+      <a class="menu__enlace" href="productos.html">Produktuak</a>
+      <a class="menu__enlace activo" href="contacto.html">Kontaktuak</a>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <h1>Kontaktua</h1>
+    <p>Galderaren bat duzu? Idatzi iezaguzu eta ahalik eta azkarren erantzungo dizugu.</p>
+
+    <form class="formulario" action="#" method="post">
+      <label for="nombre">Izena</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Zure izena" required>
+
+      <label for="email">Posta elektronikoa</label>
+      <input type="email" id="email" name="email" placeholder="zurepostak@adibidea.com" required>
+
+      <label for="telefono">Telefonoa (aukerakoa)</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="600 000 000">
+
+      <label for="mensaje">Mezua</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Kontatu iezaguzu zer behar duzun" required></textarea>
+
+      <label class="privacidad">
+        <input type="checkbox" name="privacidad" required>
+        Pribatutasun politika irakurri dut eta onartzen dut
+      </label>
+
+      <script>
+        const nombreInput = document.getElementById('nombre');
+        const emailInput = document.getElementById('email');
+        const telefonoInput = document.getElementById('telefono');
+        const mensajeInput = document.getElementById('mensaje');
+      </script>
+
+      <button class="boton" type="submit">Bidali mezua</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Gure enpresa.</p>
+
+    <div class="sare_sozialak">
+      <a href="https://www.instagram.com/zornotzafp">Instagram</a><br>
+      <img src="instagram.png" alt="Instagram">
+    </div>
+
+    <div class="sare_sozialak">
+      <a href="https://www.facebook.com/fpzornotza">Facebook</a><br>
+      <img src="facebook.png" alt="Facebook">
+    </div>
+
+    <div class="sare_sozialak">
+      <a href="https://x.com/fpzornotza">X (Twitter)</a><br>
+      <img src="gorjeo.png" alt="X (Twitter)">
+    </div>
+
+    <div class="sare_sozialak">
+      <a href="https://www.youtube.com/@CIFPZornotzaLHII">Youtube</a><br>
+      <img src="social.png" alt="Youtube">
+    </div>
+  </footer>
+</body>
+
+</html>
