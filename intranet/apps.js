@@ -29,4 +29,10 @@ const APPS = [
     imagen: 'img/generica.svg',
     descripcion: 'Copias de seguridad',
   },
+  {
+    nombre: 'Web pública',
+    ruta: 'http://localhost/',
+    imagen: 'img/generica.svg',
+    descripcion: 'Abrir la web de Gure Enpresa',
+  },
 ];

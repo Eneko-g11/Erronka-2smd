@@ -103,5 +103,8 @@ document.getElementById("formularioa").addEventListener("submit", function (even
             "Mezua: " + mezua + "\n" +
             "Erantzun-denbora: " + orduak + " ordu"
         );
+
+        // Tras validar, deja que el formulario GET actualice la URL.
+        event.currentTarget.submit();
     }
 });
