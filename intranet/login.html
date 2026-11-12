@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Intranet</title>
+</head>
+<body>
+<script>
+const PSSWD = '1234'; // Igual que PSSWD en .env
+const clave = prompt('sartu zure pasahitza');
+
+if (clave === PSSWD) {
+  sessionStorage.setItem('acceso', 'si');
+  location.replace('/');
+} else if (clave !== null) {
+  alert('Contraseña incorrecta');
+  location.replace('/login.html');
+}
+</script>
+</body>
+</html>

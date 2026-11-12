@@ -1,7 +1,6 @@
 
-/* =========================================
-   GENERALA
-   ========================================= */
+/* GENERALA*/
+
 * {
   box-sizing: border-box;
 }
@@ -22,9 +21,8 @@ h1, h2, h3 {
   color:#1c5fb3;
 }
 
-/* =========================================
-   "HEADER" ETA MENUA
-   ========================================= */
+/*"HEADER" ETA MENUA*/
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -33,6 +31,8 @@ h1, h2, h3 {
   background-color: #ffffff;
   border-bottom: 1px solid #e0e0e0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -58,9 +58,8 @@ h1, h2, h3 {
   border-bottom: 2px solid #2a7de1;
 }
 
-/* =========================================
-   BANNER HASIERA
-   ========================================= */
+/*banner */
+
 .banner {
   text-align: center;
   padding: 90px 20px;
@@ -79,9 +78,8 @@ h1, h2, h3 {
   color: #ffffff;
 }
 
-/* =========================================
-   ERDIKO EDUKIA
-   ========================================= */
+/*ERDIKO EDUKIA */
+
 .contenido {
   max-width: 800px;
   margin: 40px auto;
@@ -91,9 +89,8 @@ h1, h2, h3 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* =========================================
-  BOTOIAK
-   ========================================= */
+/*BOTOIAK */
+
 .boton {
   display: inline-block;
   padding: 12px 28px;
@@ -110,7 +107,7 @@ h1, h2, h3 {
   background-color: #e8f0fc;
 }
 
-/* El botón del formulario va de color */
+
 .formulario .boton {
   background-color: #2a7de1;
   color: #ffffff;
@@ -120,9 +117,8 @@ h1, h2, h3 {
   background-color: #1c5fb3;
 }
 
-/* =========================================
-   PRODUKTUAK
-   ========================================= */
+/* PRODUKTUAK */
+
 .tarjetas {
   display: flex;
   gap: 20px;
@@ -141,9 +137,8 @@ h1, h2, h3 {
   margin-top: 0;
 }
 
-/* =========================================
-   FORMULARIOA
-   ========================================= */
+/* FORMULARIOA*/
+
 .formulario {
   display: flex;
   flex-direction: column;
@@ -184,9 +179,8 @@ h1, h2, h3 {
   align-self: flex-start;
 }
 
-/* =========================================
-   "FOOTER"
-   ========================================= */
+/* "FOOTER"*/
+
 .footer {
   text-align: center;
   padding: 20px;
@@ -222,10 +216,9 @@ h1, h2, h3 {
 .footer .sare_sozialak a {
   font-weight: bold;
 }
-/* =========================================
-   MUGIKORRA "MEDIA"
-   ========================================= */
-@media (max-width: 700px) {
+/* MUGIKORRA "MEDIA"*/
+
+@media (max-width: 600px) {
   .header {
     flex-direction: column;
     gap: 12px;
@@ -252,9 +245,8 @@ h1, h2, h3 {
   }
 }
 
-/* =========================================
-   ARGAZKIAK
-   ========================================= */
+/*ARGAZKIAK*/
+
 .imagen {
   display: block;
   margin: 20px auto;

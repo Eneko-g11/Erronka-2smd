@@ -1,3 +1,5 @@
 # Claves: viven en tu PC, NUNCA en git
 .env
 certs/
+
+.htpasswd
