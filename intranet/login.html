@@ -1,19 +1,19 @@
 <!doctype html>
-<html lang="es">
+<html lang="eu">
 <head>
   <meta charset="utf-8">
   <title>Intranet</title>
 </head>
 <body>
 <script>
-const PSSWD = '1234'; // Igual que PSSWD en .env
+const PSSWD = '1234'; // PSSWD aldagaiaren balio bera.
 const clave = prompt('sartu zure pasahitza');
 
 if (clave === PSSWD) {
   sessionStorage.setItem('acceso', 'si');
   location.replace('/intranet/');
 } else if (clave !== null) {
-  alert('Contraseña incorrecta');
+  alert('Pasahitza ez da zuzena');
   location.replace('/intranet/login.html');
 }
 </script>

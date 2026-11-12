@@ -4,7 +4,7 @@ services:
     restart: unless-stopped
     ports:
       - "443:80"
-
+      
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
       - ./certs:/etc/nginx/certs:ro
@@ -52,8 +52,8 @@ services:
       DUPLICATI__WEBSERVICE_INTERFACE: any
       DUPLICATI__WEBSERVICE_ALLOWED_HOSTNAMES: "*"
       DUPLICATI__WEBSERVICE_URL_PREFIX: /duplicati
-      DUPLICATI__WEBSERVICE_PASSWORD: ""
-      SETTINGS_ENCRYPTION_KEY: ${DUPLICATI_SETTINGS_ENCRYPTION_KEY:?Falta DUPLICATI_SETTINGS_ENCRYPTION_KEY en .env}
+      DUPLICATI__WEBSERVICE_PASSWORD: "1234"
+      SETTINGS_ENCRYPTION_KEY: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     volumes:
       - duplicati_config:/config
       - duplicati_backups:/backups

@@ -1,6 +1,6 @@
 const PORTAL = {
-  titulo: 'Mi servidor',
-  subtitulo: 'Servicios de intranet',
+  titulo: 'Nire zerbitzaria',
+  subtitulo: 'Intraneteko zerbitzuak',
   pie: 'Intranet',
 };
 
@@ -9,30 +9,30 @@ const APPS = [
     nombre: 'Code Server',
     ruta: '/code/',
     imagen: 'img/code.svg',
-    descripcion: 'VS Code en el navegador',
+    descripcion: 'VS Code nabigatzailean',
   },
   {
     nombre: 'Portainer',
     ruta: '/portainer/',
     imagen: 'img/portainer.svg',
-    descripcion: 'Gestión de contenedores Docker',
+    descripcion: 'Docker edukiontzien kudeaketa',
   },
   {
     nombre: 'Whoami',
     ruta: '/whoami/',
     imagen: 'img/generica.svg',
-    descripcion: 'Información de la petición',
+    descripcion: 'Eskaeraren informazioa',
   },
   {
     nombre: 'Duplicati',
     ruta: '/duplicati/',
     imagen: 'img/generica.svg',
-    descripcion: 'Copias de seguridad',
+    descripcion: 'Segurtasun-kopiak',
   },
   {
     nombre: 'web-a',
     ruta: '/', 
     imagen: 'img/generica.svg',
-    descripcion: 'Abrir la web de Gure Enpresa',
+    descripcion: 'Ireki Gure Enpresaren webgunea',
   },
 ];

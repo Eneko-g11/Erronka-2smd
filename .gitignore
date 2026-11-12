@@ -1,5 +1,5 @@
-# Claves: viven en tu PC, NUNCA en git
+# Gakoak zure ordenagailuan gorde; INOIZ EZ Git-en.
 .env
 certs/
 
-.htpasswd
+
