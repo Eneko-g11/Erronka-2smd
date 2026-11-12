@@ -1,22 +1,22 @@
 services:
-  proxy:
+  intranet:
     image: nginx:alpine
     restart: unless-stopped
     ports:
-      - "443:8080"
+      - "443:80"
+
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./certs:/etc/nginx/certs:ro
       - ./web:/usr/share/nginx/html/web:ro
       - ./intranet:/usr/share/nginx/html/intranet:ro
     depends_on:
       - whoami
       - duplicati
 
-  web:
+  web-a:
     image: nginx:alpine
     restart: unless-stopped
-    ports:
-      - "80:80"
     volumes:
       - ./web:/usr/share/nginx/html:ro
 

@@ -11,10 +11,10 @@ const clave = prompt('sartu zure pasahitza');
 
 if (clave === PSSWD) {
   sessionStorage.setItem('acceso', 'si');
-  location.replace('/');
+  location.replace('/intranet/');
 } else if (clave !== null) {
   alert('Contraseña incorrecta');
-  location.replace('/login.html');
+  location.replace('/intranet/login.html');
 }
 </script>
 </body>
