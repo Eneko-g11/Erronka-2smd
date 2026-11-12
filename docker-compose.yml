@@ -27,7 +27,6 @@ services:
       PUID: "1000"
       PGID: "1000"
       TZ: Europe/Madrid
-      PASSWORD: ${PSSWD:?Falta PSSWD en .env}
     volumes:
       - code_config:/config
       - ./:/config/workspace
@@ -53,6 +52,8 @@ services:
       DUPLICATI__WEBSERVICE_INTERFACE: any
       DUPLICATI__WEBSERVICE_ALLOWED_HOSTNAMES: "*"
       DUPLICATI__WEBSERVICE_URL_PREFIX: /duplicati
+      DUPLICATI__WEBSERVICE_PASSWORD: ""
+      SETTINGS_ENCRYPTION_KEY: ${DUPLICATI_SETTINGS_ENCRYPTION_KEY:?Falta DUPLICATI_SETTINGS_ENCRYPTION_KEY en .env}
     volumes:
       - duplicati_config:/config
       - duplicati_backups:/backups
