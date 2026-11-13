@@ -3,7 +3,8 @@ services:
     image: nginx:alpine
     restart: unless-stopped
     ports:
-      - "443:80"
+      - "80:80"
+      - "443:443"
       
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
@@ -65,6 +66,7 @@ volumes:
   portainer_data:
     name: erronka-2smd_portainer_data
   duplicati_config:
+    name: erronka-2smd_duplicati_config_recovery
   duplicati_backups:
 
 
